@@ -5,7 +5,10 @@ const Header = function () {
   return (
     <>
       <header id="header">
-        <h1 className="app-title">MovieDb</h1>
+        <Link to="/">
+          <h1 className="app-title">MovieDb</h1>
+        </Link>
+
         <nav className="nav-links">
           <Link to="/popular">Popular</Link>
           <Link to="/top-rated">Top Rated</Link>

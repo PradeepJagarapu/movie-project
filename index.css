@@ -27,6 +27,8 @@ body {
   font-size: 1.8rem;
   margin: 0;
   color: white;
+  display: block;
+  cursor: pointer;
 }
 
 .nav-links {
