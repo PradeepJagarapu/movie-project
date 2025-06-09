@@ -2,6 +2,11 @@ const { createRoot } = require("react-dom/client");
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./src/App";
 import MovieList from "./src/components/MovieList";
+import Upcoming from "./src/components/Upcoming";
+import TopRated from "./src/components/TopRated";
+import MovieDetails from "./src/components/MovieDetails";
+
+console.log(MovieDetails);
 
 const root = createRoot(document.getElementById("root"));
 
@@ -16,15 +21,19 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "popular",
-        element: <h1>Popular Movies</h1>,
+        element: <MovieList />,
       },
       {
         path: "top-rated",
-        element: <h1>Top Rated Movies</h1>,
+        element: <TopRated />,
       },
       {
         path: "upcoming",
-        element: <h1>Upcoming Movies</h1>,
+        element: <Upcoming />,
+      },
+      {
+        path: "movie/:id",
+        element: <MovieDetails />,
       },
     ],
   },

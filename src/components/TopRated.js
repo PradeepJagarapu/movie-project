@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 
 const API_KEY = process.env.TMDB_API_KEY;
 
-const url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
+console.log("API KEY:", API_KEY);
 
-const MovieList = function () {
+const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`;
+
+const TopRated = function () {
   const [movieData, setMovieData] = useState({});
 
   useEffect(() => {
@@ -22,7 +24,7 @@ const MovieList = function () {
   return (
     <main id="movie-list">
       {movieData?.results?.map((movie, index) => (
-        <Link key={index} to={"movie/" + movie.id}>
+        <Link key={index} to={"/movie/" + movie.id}>
           <MovieCard movie={movie} />
         </Link>
       ))}
@@ -30,4 +32,4 @@ const MovieList = function () {
   );
 };
 
-export default MovieList;
+export default TopRated;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchBox from "./SearchBox";
 
 const Header = function () {
   return (
@@ -13,12 +14,13 @@ const Header = function () {
           <Link to="/popular">Popular</Link>
           <Link to="/top-rated">Top Rated</Link>
           <Link to="/upcoming">Upcoming</Link>
-          <input
+          {/* <input
             type="text"
             placeholder="Movie Name"
             className="search-input"
           />
-          <button className="search-btn">Search</button>
+          <button className="search-btn">Search</button> */}
+          <SearchBox />
         </nav>
       </header>
     </>
