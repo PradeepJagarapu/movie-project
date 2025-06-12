@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const SearchBox = function () {
   return (
     <>
       <input type="text" placeholder="Movie Name" className="search-input" />
-      <button className="search-btn">Search</button>
+      <Link to="">
+        <button className="search-btn">Search</button>
+      </Link>
     </>
   );
 };

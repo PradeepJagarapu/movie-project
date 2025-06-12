@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "./components/header";
 import MovieList from "./components/MovieList";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import MovieList2 from "./components/MovieList2";
 
 function App() {
   return (
     <>
-      <Header />
-      <Outlet />
+      <NavBar />
+      {/* <Outlet /> */}
+      <MovieList2 />
       <Footer />
     </>
   );
