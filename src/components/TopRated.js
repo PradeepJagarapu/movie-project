@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "./MovieList/MovieCard";
 import { Link } from "react-router-dom";
 
 const API_KEY = process.env.TMDB_API_KEY;

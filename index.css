@@ -78,45 +78,6 @@ body {
 }
 
 /* Movie List */
-#movie-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  justify-items: center;
-  background-color: #1e1e1e;
-  flex-grow: 1;
-}
-
-.movie-card {
-  background-color: #2b2b2b;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.2s ease;
-  max-width: 200px;
-}
-
-.movie-card:hover {
-  transform: scale(1.05);
-}
-
-.movie-poster {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 0.8rem;
-}
-
-.movie-title {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: #ffffff;
-}
-
-.movie-rating {
-  font-size: 0.9rem;
-  color: #bbbbbb;
-}
 
 /* Footer */
 #footer {

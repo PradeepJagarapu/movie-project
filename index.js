@@ -1,10 +1,11 @@
 const { createRoot } = require("react-dom/client");
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./src/App";
-import MovieList from "./src/components/MovieList";
+
 import Upcoming from "./src/components/Upcoming";
 import TopRated from "./src/components/TopRated";
 import MovieDetails from "./src/components/MovieDetails";
+import MovieList from "./src/components/MovieList/MovieList";
 
 console.log(MovieDetails);
 
